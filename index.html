@@ -49,9 +49,9 @@ h1 em{font-style:normal;color:var(--acc)}
 .btn.g{background:transparent;color:var(--text);border-color:var(--line)}
 .btn.g:hover{border-color:var(--acc);color:var(--acc)}
 .photo{position:relative;justify-self:center;width:min(360px,80%)}
-.photo::before{content:"";position:absolute;inset:-12px;border-radius:50%;border:2px dashed var(--acc);opacity:.6;animation:spin 30s linear infinite}
+.photo::before{content:"";position:absolute;inset:0;border-radius:32px;border:2px solid var(--acc);opacity:.55;transform:translate(14px,14px)}
 .photo::after{content:"";position:absolute;inset:-60px;background:radial-gradient(circle,var(--glow),transparent 65%);z-index:-1}
-.photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 24%;border-radius:50%;display:block;background:var(--surface)}
+.photo img{position:relative;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:50% 20%;border-radius:32px;display:block;background:var(--surface)}
 @keyframes spin{to{transform:rotate(360deg)}}
 .in{opacity:0;transform:translateY(22px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
 @keyframes up{to{opacity:1;transform:none}}
